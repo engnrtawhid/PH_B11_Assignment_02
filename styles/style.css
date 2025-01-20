@@ -10,7 +10,7 @@
 
 /* Shared Styles */
 .bgImage{
-    background-image: url(/assets/bg.png);
+    background-image: url(../assets/bg.png);
 }
 
 .orangeButton{
@@ -215,10 +215,10 @@ nav {
 .stArrow{
     border: none;
     background-color: #FEA301;
-    padding: 20px;
+    padding: 20px 25px;
     border-radius: 50%;
     color: white;
-    font-size: 25px;
+    font-size: 30px;
 }
 
 
@@ -285,7 +285,7 @@ nav {
         display: none;
     }
 
-    
+
 
 
 
