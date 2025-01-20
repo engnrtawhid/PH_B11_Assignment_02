@@ -1,0 +1,123 @@
+/* Font Styles */
+.quicksand{
+    font-family: "Quicksand", serif;
+}
+
+.raleway {
+    font-family: "Raleway", serif;
+}
+
+.contentMargin {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* Shared Styles */
+
+
+
+
+
+
+/* Navbar Styles */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navLogo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navLogo h3{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.navMenu ul{
+    display: flex;
+}
+
+.navMenu ul li {
+    list-style: none;
+}
+
+.navMenu ul li a{
+    text-decoration: none;
+    margin-right: 32px;
+}
+
+.menuHome{
+    color:#FEA301;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.menuAbout{
+    color:#01ACFD;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.menuFacilities{
+    color: #05D4DF;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.menuAdmission{
+    color: #5D58EF;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.orangeButton{
+    font-size: 1.25rem;
+    padding: 10px 40px;
+    background-color: #FEA301;
+    border-radius: 12px;
+    border: none;
+    color: white;
+}
+
+.hiddenMenu{
+    display: none;
+}
+
+
+
+
+
+/* RESPONSIVE DESIGN */
+/* Mobile device */
+@media screen and (max-width: 576px){
+    header {
+        padding: 12px ;
+    }
+    
+    .navLogo h3{
+        display: none;
+    }
+
+    .navMenu {
+        display: none;
+    }
+
+    .navButton{
+        display: none;
+    }
+    .hiddenMenu {
+        display: block;
+    }
+
+    .hiddenMenu i{
+        font-size: 2.5rem;
+    }
+}
+
+
+
