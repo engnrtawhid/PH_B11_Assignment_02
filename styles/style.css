@@ -3,16 +3,15 @@
     font-family: "Quicksand", serif;
 }
 
-.raleway {
-    font-family: "Raleway", serif;
-}
-
 .contentMargin {
     max-width: 1440px;
     margin: 0 auto;
 }
 
 /* Shared Styles */
+.bgImage{
+    background-image: url(/assets/bg.png);
+}
 
 .orangeButton{
     font-size: 1.25rem;
@@ -32,7 +31,16 @@
     color: white;
 }
 
+.stCardTitle{
+    font-size: 1.6rem;
+}
 
+.cardDescription{
+    color: #808080;
+    font-size: 1rem;
+    font-family: "Raleway", serif;
+    line-height: 1.5rem;
+}
 
 
 
@@ -126,6 +134,93 @@ nav {
     font-size: 1.25rem;
 }
 
+/* Standard Section Styles */
+
+.standardSection h1{
+    color: #000;
+    text-align: center;
+    font-size: 2.9rem;
+    font-weight: 700;
+    margin-top: 100px;
+    margin-bottom: 80px;
+}
+
+.stCardContainer{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.stCards{
+    border-radius: 18.864px;
+    border: 0.943px solid #DEF5FF;
+    box-shadow: 0px 0px 28.296px 0.943px rgba(0, 0, 0, 0.05) inset;
+    padding: 50px 40px;
+    text-align: center;
+}
+.stCards img{
+    margin-bottom: 32px;
+}
+
+.stCards h3{
+    margin-bottom: 32px;
+}
+
+.stCards p{
+    margin-bottom: 52px;
+    text-decoration: none;
+}
+
+.stCards a{
+    margin-bottom: 32px;
+}
+
+.kinderCard{
+    background: linear-gradient(180deg, #DEF5FF 0%, rgba(255, 255, 255, 0.00) 40%), #FFF;
+}
+
+.elementaryCard{
+    background: linear-gradient(180deg, #FFF4DC 0%, rgba(255, 255, 255, 0.00) 40%), #FFF;
+}
+
+.middleCard{
+    background: linear-gradient(180deg, #EEE1FF 0%, rgba(255, 255, 255, 0.00) 40%), #FFF;
+}
+
+.stLinks{
+    text-decoration: none;
+}
+
+.kinderLink{
+    color: #64C8FF;
+}
+
+.elementaryLink{
+    color: #F0AA00;
+}
+
+.middleLink{
+    color: #8700FF;
+}
+
+.stArrowContainer{
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.stArrow{
+    border: none;
+    background-color: #FEA301;
+    padding: 20px;
+    border-radius: 50%;
+    color: white;
+    font-size: 25px;
+}
+
 
 
 
@@ -135,7 +230,8 @@ nav {
     header {
         padding: 17px ;
     }
-    
+
+    /* Nav Section */
     .navLogo h3{
         display: none;
     }
@@ -154,6 +250,7 @@ nav {
     .hiddenMenu i{
         font-size: 2.5rem;
     }
+    /* Banner Section */
 
     .bannerSection{
         flex-direction: column-reverse;
@@ -171,6 +268,27 @@ nav {
     .bannerContent p{
         font-size: 1rem;
     }
+
+    /* Standard Section */
+    .standardSection h1{
+        font-size: 2rem;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+
+    .stCardContainer{
+       flex-direction: column;
+       padding: 0 17px;
+    }
+
+    .stArrowContainer{
+        display: none;
+    }
+
+    
+
+
+
 }
 
 
