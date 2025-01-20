@@ -14,6 +14,25 @@
 
 /* Shared Styles */
 
+.orangeButton{
+    font-size: 1.25rem;
+    padding: 10px 40px;
+    background-color: #FEA301;
+    border-radius: 12px;
+    border: none;
+    color: white;
+}
+
+.blackButton{
+    font-size: 1.25rem;
+    padding: 10px 40px;
+    background-color: #111;
+    border-radius: 12px;
+    border: none;
+    color: white;
+}
+
+
 
 
 
@@ -75,19 +94,37 @@ nav {
     font-weight: 500;
 }
 
-.orangeButton{
-    font-size: 1.25rem;
-    padding: 10px 40px;
-    background-color: #FEA301;
-    border-radius: 12px;
-    border: none;
-    color: white;
-}
 
 .hiddenMenu{
     display: none;
 }
 
+/* Banner Section Styles */
+
+.bannerSection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.bannerTitle {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.titleOrange{
+    color: #FEA301;
+}
+
+.titleBlue{
+    color: #01ACFD;
+}
+
+.bannerContent p{
+    font-size: 1.25rem;
+}
 
 
 
@@ -96,7 +133,7 @@ nav {
 /* Mobile device */
 @media screen and (max-width: 576px){
     header {
-        padding: 12px ;
+        padding: 17px ;
     }
     
     .navLogo h3{
@@ -117,7 +154,26 @@ nav {
     .hiddenMenu i{
         font-size: 2.5rem;
     }
+
+    .bannerSection{
+        flex-direction: column-reverse;
+    }
+
+    .bannerContent{
+        text-align: center;
+    }
+
+    .bannerTitle {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 24px;
+    }
+    .bannerContent p{
+        font-size: 1rem;
+    }
 }
+
+
 
 
 
