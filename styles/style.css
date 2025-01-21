@@ -54,12 +54,12 @@ body {
 }
 
 .headingPrimary{
-        color: #000;
-        text-align: center;
-        font-size: 2.9rem;
-        font-weight: 700;
-        margin-top: 100px;
-        margin-bottom: 80px;
+    color: #000;
+    text-align: center;
+    font-size: 2.9rem;
+    font-weight: 700;
+    margin-top: 100px;
+    margin-bottom: 80px;           
 }
 
 
@@ -327,6 +327,67 @@ body {
     left: 27px;
 }
 
+/* Footer Styles */
+.footerBG {
+    background-color: #01ACFD;;
+}
+
+/* Footer Section Styles */
+
+
+
+.footerContainer{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 125px 140px;
+}
+.footerLogo{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.footerLogo h1{
+    color: #FFF;
+    font-size: 2rem;
+    margin: 0px;
+}
+
+.leftFooter p{
+    color: #FFF;
+}
+
+.middleFooter h4, .rightFooter h4 {
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 15px;
+
+}
+
+.middleFooter ul li{
+    list-style: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+    
+}
+
+.middleFooter ul{
+    margin: 0px;
+    padding: 0px;
+}
+
+.middleFooter ul li a {
+    text-decoration: none;
+    color: #FFF;
+    font-weight: 500;
+}
+
+.socialContainer img{
+    border-radius: 10px;
+    margin-right: 5px;
+}
+
 
 
 
@@ -445,6 +506,14 @@ body {
         margin-top: 40px;
         margin-bottom: 20px;
     }
+
+    /* Footer Section */
+    .footerContainer{
+        flex-direction: column;
+        padding: 17px;
+    }
+
+
 }
 
 
