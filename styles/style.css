@@ -115,7 +115,7 @@ body {
 
 /* Navbar Styles */
 
-nav {
+.navContainer {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -284,30 +284,29 @@ nav {
 /* Stories Section Designs */
 
 .storiesCardContainer {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 20px;
-}
-
-.rightCardcontainer{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
     gap: 20px;
 }
 
-
+.mainStory{
+    grid-row: 1 / 3;
+    grid-column: 1 / 3;
+}
 
 .cardContent{
     padding: 18px 27px;
 }
 
 .storiesCard{
+    max-width: 1440px;
     border-radius: 16px;
-    background: #FFF;
+    background: #FFF; 
 }
 
 .storiesCard img{
+    width: 100%;
     border-radius: 16px 16px 0 0;
 }
 
@@ -338,11 +337,15 @@ nav {
 /* RESPONSIVE DESIGN */
 /* Mobile device */
 @media screen and (max-width: 576px){
-    header {
-        padding: 17px ;
-    }
-
+  
     /* Nav Section */
+    .navContainer {
+        padding: 0 17px;
+    }
+    .bottomBorder {
+        padding-bottom: 10px;
+        border-bottom: 0.5px solid #F0AA00;
+    }
     .navLogo h3{
         display: none;
     }
@@ -379,6 +382,10 @@ nav {
     .bannerContent p{
         font-size: 1rem;
     }
+ 
+    .bannerImage img{
+        width: 100%;
+    }
 
     /* Standard Section */
     .headingPrimary{
@@ -401,10 +408,12 @@ nav {
     .mainStory{
         display: none;
     }
-    .rightCardcontainer{
-        padding: 0px 17px;
+
+    .storiesCardContainer{
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 17px;
     }
-    
+
     .storiesCard img{
         width: 100%;
     }
@@ -414,17 +423,17 @@ nav {
     }
 
     .dateContainer2{
-        top: -105px;
+        top: -92px;
         left: 15px;
     }
 
     .dateButton2{
-        font-size: 0.7rem;
+        font-size: 0.5rem;
         padding: 4px 8px;
     }
 
-    .storiesTitle1{
-        font-size: 0.5rem;
+    .storiesTitle2 {
+        font-size: 0.8rem;
         font-weight: 700;
     }
 
@@ -435,7 +444,7 @@ nav {
     .headingPrimary{
         margin-top: 40px;
         margin-bottom: 20px;
-}
+    }
 }
 
 
