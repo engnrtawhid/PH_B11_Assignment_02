@@ -187,6 +187,7 @@ body {
     font-size: 3.5rem;
     font-weight: 700;
     margin-bottom: 24px;
+    line-height: 3.8rem;
 }
 
 .titleOrange{
@@ -199,6 +200,28 @@ body {
 
 .bannerContent p{
     font-size: 1.25rem;
+    padding-right: 350px;
+}
+
+/* Marquee Section Styles */
+
+.marqueeSection{
+    margin-top: 80px;
+    padding: 5px 0px;
+    border-top: 2px solid #F0AA00;
+    border-bottom: 2px solid #F0AA00;
+}
+
+.marqueeContent{
+    display: flex;
+    gap: 50px;
+}
+
+.marqueeText {
+    color: #5E5E5E;
+    border-right: 2px solid gray;
+    padding-right: 50px;
+    font-size: 2rem;
 }
 
 /* Standard Section Styles */
@@ -273,12 +296,19 @@ body {
 }
 
 .stArrow{
-    border: none;
+    border: 1px solid #FEA301;
     background-color: #FEA301;
-    padding: 20px 25px;
+    padding: 20px 30px;
     border-radius: 50%;
     color: white;
     font-size: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.stArrow:hover{
+    background-color: white;
+    color: #FEA301;
 }
 
 /* Stories Section Designs */
@@ -439,13 +469,25 @@ body {
         font-size: 2rem;
         font-weight: 700;
         margin-bottom: 24px;
+        line-height: 2rem;
     }
     .bannerContent p{
         font-size: 1rem;
+        padding-right: 0px;
     }
  
     .bannerImage img{
         width: 100%;
+    }
+
+    /* Marquee Section */
+    .marqueeSection{
+        margin-top: 40px;
+        padding: 0px px;
+    }
+
+    .marqueeText{
+        font-size: 1.3rem;
     }
 
     /* Standard Section */
@@ -510,10 +552,8 @@ body {
     /* Footer Section */
     .footerContainer{
         flex-direction: column;
-        padding: 17px;
+        padding: 60px 17px;
     }
-
-
 }
 
 
