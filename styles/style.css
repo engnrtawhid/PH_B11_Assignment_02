@@ -3,6 +3,10 @@
     font-family: "Quicksand", serif;
 }
 
+body {
+    font-size: 1rem;
+}
+
 .contentMargin {
     max-width: 1440px;
     margin: 0 auto;
@@ -11,6 +15,13 @@
 /* Shared Styles */
 .bgImage{
     background-image: url(../assets/bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.gradientBG{
+    
+    background: url(../assets/bg.png), linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
 }
 
 .orangeButton{
@@ -42,9 +53,65 @@
     line-height: 1.5rem;
 }
 
+.headingPrimary{
+        color: #000;
+        text-align: center;
+        font-size: 2.9rem;
+        font-weight: 700;
+        margin-top: 100px;
+        margin-bottom: 80px;
+}
+
+
+.storiesTitle1{
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 30px 0 20px 0;
+}
+
+.storiesTitle2{
+    color: #000;
+    font-size: 1rem;
+    font-weight: 700;
+}
 
 
 
+.dateButton1{
+    color: white;
+    font-size: 1rem;
+    font-family: "Raleway", serif;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 50px;
+}
+
+.dateButton2{
+    color: white;
+    font-size: 1rem;
+    font-family: "Raleway", serif;
+    padding: 7px 15px;
+    border: none;
+    border-radius: 50px;
+}
+
+.dateButtonCyan{
+    background-color: #3cd8e8;
+}
+
+
+.dateButtonBlue{
+    background-color: #5D58EF;
+}
+
+.dateButtonGreen{
+    background-color: #95B226;;
+}
+
+.dateButtonOrange{
+    background-color: #FEA301;
+}
 
 /* Navbar Styles */
 
@@ -136,14 +203,7 @@ nav {
 
 /* Standard Section Styles */
 
-.standardSection h1{
-    color: #000;
-    text-align: center;
-    font-size: 2.9rem;
-    font-weight: 700;
-    margin-top: 100px;
-    margin-bottom: 80px;
-}
+
 
 .stCardContainer{
     display: flex;
@@ -221,6 +281,57 @@ nav {
     font-size: 30px;
 }
 
+/* Stories Section Designs */
+
+.storiesCardContainer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.rightCardcontainer{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+
+
+.cardContent{
+    padding: 18px 27px;
+}
+
+.storiesCard{
+    border-radius: 16px;
+    background: #FFF;
+}
+
+.storiesCard img{
+    border-radius: 16px 16px 0 0;
+}
+
+.storiesButton{
+    text-align: center;
+    padding: 80px 0;
+}
+
+.dateContainer1{
+    position: relative;
+    top: -315px;
+    left: 27px;
+}
+
+.dateContainer2{
+    position: relative;
+    top: -132px;
+    left: 27px;
+}
+
+
+
+
+
 
 
 
@@ -270,7 +381,7 @@ nav {
     }
 
     /* Standard Section */
-    .standardSection h1{
+    .headingPrimary{
         font-size: 2rem;
         margin-top: 40px;
         margin-bottom: 20px;
@@ -285,10 +396,46 @@ nav {
         display: none;
     }
 
+    /* Stories Section */
 
+    .mainStory{
+        display: none;
+    }
+    .rightCardcontainer{
+        padding: 0px 17px;
+    }
+    
+    .storiesCard img{
+        width: 100%;
+    }
 
+    .cardContent{
+        padding: 8px 15px;
+    }
 
+    .dateContainer2{
+        top: -105px;
+        left: 15px;
+    }
 
+    .dateButton2{
+        font-size: 0.7rem;
+        padding: 4px 8px;
+    }
+
+    .storiesTitle1{
+        font-size: 0.5rem;
+        font-weight: 700;
+    }
+
+    .storiesButton{
+        padding: 20px 0;
+    }
+
+    .headingPrimary{
+        margin-top: 40px;
+        margin-bottom: 20px;
+}
 }
 
 

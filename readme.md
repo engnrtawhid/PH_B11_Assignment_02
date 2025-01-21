@@ -17,7 +17,7 @@
 - **Contact Button**: button at the right to encourage user interaction.
 - **Mobile Responsiveness**:
   - Displays only the logo at the left and a menu bar at the right.
-  - Other elements of the navbar will be hidden for a cleaner mobile experience.
+  - Other elements of the navbar will be hidden for a cleaner mobile experience.   
 
 ---
 
