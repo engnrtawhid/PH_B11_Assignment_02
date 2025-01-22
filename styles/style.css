@@ -2,11 +2,9 @@
 .quicksand{
     font-family: "Quicksand", serif;
 }
-
 body {
     font-size: 1rem;
 }
-
 .contentMargin {
     max-width: 1440px;
     margin: 0 auto;
@@ -18,11 +16,9 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
 }
-
 .gradientBG{
     background: url(../assets/bg.png), linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
 }
-
 .orangeButton{
     font-size: 1.25rem;
     font-weight: 700;
@@ -33,13 +29,13 @@ body {
     color: white;
     border: 1px solid #FEA301;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
-
 .orangeButton:hover{
+    transform: scale(1.02);
     color: #FEA301;
     background-color: #FFF; 
 }
-
 .blackButton{
     font-size: 1.25rem;
     padding: 10px 40px;
@@ -50,24 +46,22 @@ body {
     color: white;
     border: 1px solid #111;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
-
 .blackButton:hover{
+    transform: scale(1.02);
     color: #111;
     background-color: #FFF;
 }
-
 .stCardTitle{
     font-size: 1.6rem;
 }
-
 .cardDescription{
     color: #808080;
     font-size: 1rem;
     font-family: "Raleway", serif;
     line-height: 1.5rem;
 }
-
 .headingPrimary{
     color: #000;
     text-align: center;
@@ -76,23 +70,17 @@ body {
     margin-top: 100px;
     margin-bottom: 80px;           
 }
-
-
 .storiesTitle1{
     color: #000;
     font-size: 1.5rem;
     font-weight: 700;
     padding: 30px 0 20px 0;
 }
-
 .storiesTitle2{
     color: #000;
     font-size: 1rem;
     font-weight: 700;
 }
-
-
-
 .dateButton1{
     color: white;
     font-size: 1rem;
@@ -101,7 +89,6 @@ body {
     border: none;
     border-radius: 50px;
 }
-
 .dateButton2{
     color: white;
     font-size: 1rem;
@@ -110,81 +97,71 @@ body {
     border: none;
     border-radius: 50px;
 }
-
 .dateButtonCyan{
     background-color: #3cd8e8;
 }
-
-
 .dateButtonBlue{
     background-color: #5D58EF;
 }
-
 .dateButtonGreen{
     background-color: #95B226;;
 }
-
 .dateButtonOrange{
     background-color: #FEA301;
 }
 
 /* Navbar Styles */
-
 .navContainer {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
 .navLogo{
     display: flex;
     align-items: center;
     gap: 10px;
 }
-
 .navLogo h3{
     font-size: 2rem;
     font-weight: 700;
 }
-
 .navMenu ul{
     display: flex;
 }
-
 .navMenu ul li {
     list-style: none;
 }
-
 .navMenu ul li a{
     text-decoration: none;
     margin-right: 32px;
 }
-
 .menuHome{
     color:#FEA301;
     font-size: 1.25rem;
     font-weight: 700;
 }
-
+.menuHome:hover{
+    color: #111;
+}
+.menuHover:hover{
+    color: #111;
+    font-weight: 500;
+}
 .menuAbout{
     color:#01ACFD;
     font-size: 1.25rem;
     font-weight: 500;
 }
-
 .menuFacilities{
     color: #05D4DF;
     font-size: 1.25rem;
     font-weight: 500;
 }
-
 .menuAdmission{
     color: #5D58EF;
     font-size: 1.25rem;
     font-weight: 500;
 }
-
-
 .hiddenMenu{
     display: none;
 }
@@ -196,26 +173,22 @@ body {
     justify-content: space-between;
     align-items: center;
 }
-
-
 .bannerTitle {
     font-size: 3.5rem;
     font-weight: 700;
-    margin-bottom: 24px;
+    margin-bottom: 35px;
     line-height: 3.8rem;
 }
-
 .titleOrange{
     color: #FEA301;
 }
-
 .titleBlue{
     color: #01ACFD;
 }
-
 .bannerContent p{
     font-size: 1.25rem;
     max-width: 640px;
+    margin-bottom: 35px;
 }
 
 /* Marquee Section Styles */
@@ -226,12 +199,10 @@ body {
     border-top: 2px solid #F0AA00;
     border-bottom: 2px solid #F0AA00;
 }
-
 .marqueeContent{
     display: flex;
     gap: 50px;
 }
-
 .marqueeText {
     color: #5E5E5E;
     border-right: 2px solid gray;
@@ -241,67 +212,65 @@ body {
 
 /* Standard Section Styles */
 
-
-
 .stCardContainer{
     display: flex;
     gap: 30px;
     align-items: center;
     justify-content: space-between;
 }
-
 .stCards{
     border-radius: 18.864px;
     border: 0.943px solid #DEF5FF;
     box-shadow: 0px 0px 28.296px 0.943px rgba(0, 0, 0, 0.05) inset;
     padding: 50px 40px;
     text-align: center;
+    transform: scale(1);
+    transition: transform 0.3s ease;    
+}
+.stCards:hover{
+    transform: scale(1.02);
 }
 .stCards img{
     margin-bottom: 32px;
 }
-
 .stCards h3{
     margin-bottom: 32px;
 }
-
 .stCards p{
     margin-bottom: 52px;
     text-decoration: none;
 }
-
 .stCards a{
     margin-bottom: 32px;
 }
-
 .kinderCard{
     background: linear-gradient(180deg, #DEF5FF 0%, rgba(255, 255, 255, 0.00) 40%), #FFF;
 }
-
 .elementaryCard{
     background: linear-gradient(180deg, #FFF4DC 0%, rgba(255, 255, 255, 0.00) 40%), #FFF;
 }
-
 .middleCard{
     background: linear-gradient(180deg, #EEE1FF 0%, rgba(255, 255, 255, 0.00) 40%), #FFF;
 }
-
 .stLinks{
     text-decoration: none;
 }
-
 .kinderLink{
     color: #64C8FF;
+    transition: color 0.5s ease;
 }
-
 .elementaryLink{
     color: #F0AA00;
+    transition: color 0.5s ease;
 }
-
 .middleLink{
     color: #8700FF;
+    transition: color 0.5s ease;
 }
-
+.stLinks:hover{
+    color: #111;
+    font-weight: 600;
+}
 .stArrowContainer{
     margin-top: 80px;
     display: flex;
@@ -309,7 +278,6 @@ body {
     align-items: center;
     gap: 20px;
 }
-
 .stArrow{
     border: 1px solid #FEA301;
     background-color: #FEA301;
@@ -319,11 +287,12 @@ body {
     font-size: 30px;
     text-align: center;
     cursor: pointer;
+    transition: background-color 0.4s ease;
 }
-
 .stArrow:hover{
     background-color: white;
     color: #FEA301;
+    transform: scale(1.06);
 }
 
 /* Stories Section Designs */
@@ -334,53 +303,48 @@ body {
     justify-content: center;
     gap: 20px;
 }
-
 .mainStory{
     grid-row: 1 / 3;
     grid-column: 1 / 3;
 }
-
 .cardContent{
     padding: 18px 27px;
 }
-
 .storiesCard{
     max-width: 1440px;
     border-radius: 16px;
     background: #FFF; 
+    transform: scale(1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
 }
-
+.storiesCard:hover{
+    transform: scale(1.02);
+}
 .storiesCard img{
     width: 100%;
     border-radius: 16px 16px 0 0;
 }
-
 .storiesButton{
     text-align: center;
     padding: 80px 0;
 }
-
 .dateContainer1{
     position: relative;
     top: -312px;
     left: 27px;
 }
-
 .dateContainer2{
     position: relative;
     top: -130px;
     left: 27px;
 }
 
-/* Footer Styles */
+/* Footer Section Styles */
+
 .footerBG {
     background-color: #01ACFD;;
 }
-
-/* Footer Section Styles */
-
-
-
 .footerContainer{
     display: flex;
     align-items: flex-start;
@@ -392,60 +356,54 @@ body {
     align-items: center;
     gap: 20px;
 }
-
 .footerLogo h1{
     color: #FFF;
     font-size: 2rem;
     margin: 0px;
 }
-
 .leftFooter p{
     max-width: 400px;
     color: #FFF;
     text-align: justify;
 }
-
 .middleFooter h4, .rightFooter h4 {
     font-size: 1.5rem;
     color: white;
     margin-bottom: 15px;
-
 }
-
 .middleFooter ul li{
     list-style: none;
     cursor: pointer;
-    margin-bottom: 10px;
-    
+    margin-bottom: 10px;   
 }
-
 .middleFooter ul{
     margin: 0px;
     padding: 0px;
 }
-
 .middleFooter ul li a {
     text-decoration: none;
     color: #FFF;
     font-weight: 500;
+    transition: color 0.5s ease;
 }
-
+.middleFooter ul li a:hover{
+    color: #111;
+    font-weight: 600;
+}
 .socialContainer img{
     border-radius: 10px;
     margin-right: 5px;
+    cursor: pointer;  
 }
-
-
-
-
-
-
-
+.socialContainer img:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out; 
+}
 
 /* RESPONSIVE DESIGN */
 /* Mobile device */
-@media screen and (max-width: 576px){
-  
+
+@media screen and (max-width: 576px){  
     /* Nav Section */
     .navContainer {
         padding: 0 17px;
@@ -453,123 +411,104 @@ body {
     .bottomBorder {
         padding-bottom: 10px;
         border-bottom: 0.5px solid #F0AA00;
+        height: 40px;
     }
     .navLogo h3{
         display: none;
     }
-
+    .navLogo img{
+        width: 40px;
+    }
     .navMenu {
         display: none;
     }
-
     .navButton{
         display: none;
     }
     .hiddenMenu {
         display: block;
     }
-
     .hiddenMenu i{
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
     /* Banner Section */
-
     .bannerSection{
         flex-direction: column-reverse;
     }
-
     .bannerContent{
         text-align: center;
     }
-
     .bannerTitle {
         font-size: 2rem;
         font-weight: 700;
         margin-bottom: 24px;
         line-height: 2rem;
+        margin-bottom: 15px;
     }
     .bannerContent p{
         font-size: 1rem;
-        padding-right: 0px;
+        margin-bottom: 15px;
     }
- 
     .bannerImage img{
         width: 100%;
     }
-
     /* Marquee Section */
     .marqueeSection{
         margin-top: 40px;
         padding: 0px px;
     }
-
     .marqueeText{
         font-size: 1.3rem;
     }
-
     /* Standard Section */
     .headingPrimary{
         font-size: 2rem;
         margin-top: 40px;
         margin-bottom: 20px;
     }
-
     .stCardContainer{
        flex-direction: column;
        padding: 0 17px;
     }
-
     .stArrowContainer{
         display: none;
     }
-
     /* Stories Section */
-
     .bgImage{
         background-size: auto;
     }
-
     .mainStory{
         display: none;
     }
-
     .storiesCardContainer{
         grid-template-columns: repeat(2, 1fr);
         padding: 0 17px;
     }
-
     .storiesCard img{
         width: 100%;
     }
-
     .cardContent{
         padding: 8px 15px;
     }
-
     .dateContainer2{
         top: -105px;
         left: 15px;
     }
-
     .dateButton2{
         font-size: 0.6rem;
         padding: 4px 8px;
     }
-
     .storiesTitle2 {
         font-size: 0.8rem;
         font-weight: 700;
     }
-
     .storiesButton{
         padding: 20px 0;
     }
-
     .headingPrimary{
         margin-top: 40px;
         margin-bottom: 20px;
     }
-
     /* Footer Section */
     .footerContainer{
         flex-direction: column;
