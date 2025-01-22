@@ -74,7 +74,7 @@ body {
     color: #000;
     font-size: 1.5rem;
     font-weight: 700;
-    padding: 30px 0 20px 0;
+    padding: 30px 200px 20px 35px;
 }
 .storiesTitle2{
     color: #000;
@@ -307,8 +307,8 @@ body {
     grid-row: 1 / 3;
     grid-column: 1 / 3;
 }
-.cardContent{
-    padding: 18px 27px;
+.mainStoryDescription{
+    padding: 0px 100px 0px 35px;
 }
 .storiesCard{
     max-width: 1440px;
@@ -329,15 +329,18 @@ body {
     text-align: center;
     padding: 80px 0;
 }
-.dateContainer1{
-    position: relative;
-    top: -312px;
-    left: 27px;
+.storiesTitle2{
+    padding: 0px 0px 20px 15px;
 }
-.dateContainer2{
+.dateButton1{
     position: relative;
-    top: -130px;
-    left: 27px;
+    left: 25px;
+    bottom: 275px;
+}
+.dateButton2{
+    position: relative;
+    left: 15px;
+    bottom: 22px;
 }
 
 /* Footer Section Styles */
@@ -439,15 +442,15 @@ body {
         text-align: center;
     }
     .bannerTitle {
-        font-size: 2rem;
+        font-size: 2.2rem;
         font-weight: 700;
         margin-bottom: 24px;
-        line-height: 2rem;
+        line-height: 2.7rem;
         margin-bottom: 15px;
     }
     .bannerContent p{
-        font-size: 1rem;
-        margin-bottom: 15px;
+        font-size: 1.1rem;
+        margin-bottom: 18px;
     }
     .bannerImage img{
         width: 100%;
@@ -488,14 +491,11 @@ body {
         width: 100%;
     }
     .cardContent{
-        padding: 8px 15px;
-    }
-    .dateContainer2{
-        top: -105px;
-        left: 15px;
+        padding: 0px 15px 25px 15px;
     }
     .dateButton2{
-        font-size: 0.6rem;
+        bottom: 15px;
+        font-size: 0.8rem;
         padding: 4px 8px;
     }
     .storiesTitle2 {
@@ -513,6 +513,9 @@ body {
     .footerContainer{
         flex-direction: column;
         padding: 60px 17px;
+    }
+    .leftFooter p{
+        max-width: 576px;
     }
 }
 
