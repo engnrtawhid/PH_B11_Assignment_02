@@ -20,17 +20,24 @@ body {
 }
 
 .gradientBG{
-    
     background: url(../assets/bg.png), linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
 }
 
 .orangeButton{
     font-size: 1.25rem;
+    font-weight: 700;
     padding: 10px 40px;
     background-color: #FEA301;
     border-radius: 12px;
     border: none;
     color: white;
+    border: 1px solid #FEA301;
+    cursor: pointer;
+}
+
+.orangeButton:hover{
+    color: #FEA301;
+    background-color: #FFF; 
 }
 
 .blackButton{
@@ -38,8 +45,16 @@ body {
     padding: 10px 40px;
     background-color: #111;
     border-radius: 12px;
+    font-weight: 700;
     border: none;
     color: white;
+    border: 1px solid #111;
+    cursor: pointer;
+}
+
+.blackButton:hover{
+    color: #111;
+    background-color: #FFF;
 }
 
 .stCardTitle{
@@ -200,7 +215,7 @@ body {
 
 .bannerContent p{
     font-size: 1.25rem;
-    padding-right: 350px;
+    max-width: 640px;
 }
 
 /* Marquee Section Styles */
@@ -347,13 +362,13 @@ body {
 
 .dateContainer1{
     position: relative;
-    top: -315px;
+    top: -312px;
     left: 27px;
 }
 
 .dateContainer2{
     position: relative;
-    top: -132px;
+    top: -130px;
     left: 27px;
 }
 
@@ -385,7 +400,9 @@ body {
 }
 
 .leftFooter p{
+    max-width: 400px;
     color: #FFF;
+    text-align: justify;
 }
 
 .middleFooter h4, .rightFooter h4 {
@@ -507,6 +524,10 @@ body {
     }
 
     /* Stories Section */
+
+    .bgImage{
+        background-size: auto;
+    }
 
     .mainStory{
         display: none;
